@@ -20,7 +20,7 @@ curl_setopt($ch, CURLOPT_NOBODY, true);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $info = curl_exec($ch);
 $size2 = curl_getinfo($ch, CURLINFO_CONTENT_LENGTH_DOWNLOAD);
-header("Content-Type: video/x-matroska");
+header("Content-Type: video/mp4");
 //possibly need to change the above line to video/mp4 instead of video/x-matroska
 $filesize = $size2;
 $offset = 0;
